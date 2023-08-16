@@ -1,0 +1,20 @@
+nav a {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+nav a::after {
+  content: " ";
+  width: 0%;
+  height: 4px;
+  background-color: #FFF;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 300ms all ease;
+  border-radius: 2px;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
