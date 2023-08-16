@@ -1,4 +1,7 @@
+import About from "./components/About/About"
 import Navbar from "./components/Navbar/NAvbar"
+import Projects from "./components/Projects.css/Projects"
+import Skills from "./components/Skills/Skills"
 
 
 function App() {
@@ -6,10 +9,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <h1 className="h-[100vh]">OIII</h1>
-      <section id="projetos">
-        projetos
-      </section>
+      <About />
+      <Skills />
+      <Projects />
     </>
   )
 }

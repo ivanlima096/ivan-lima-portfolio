@@ -20,7 +20,8 @@ export default function Navbar() {
         <li><a href="#contato" className="text-white  uppercase font-bold">contato</a></li>
       </ul>
       <div onClick={handleNav} className="block md:hidden">
-        {!nav ? <AiOutlineClose size={22} className="text-white" /> : <AiOutlineMenu size={22} className="text-white" />}
+        {!nav ? <AiOutlineClose size={33} className="text-white p-1 border-2 rounded border-white hover:cursor-pointer" />
+          : <AiOutlineMenu size={33} className="text-white p-1 border-2 rounded border-white hover:cursor-pointer" />}
       </div>
       <div className={!nav
         ? "fixed left-0 top-0 w-[50%] h-full border-r border-r-gray-900 bg-[#000300] ease duration-500"
