@@ -1,3 +1,7 @@
+nav {
+  z-index: 10;
+}
+
 nav a {
   position: relative;
   padding-bottom: 4px;
