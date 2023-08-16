@@ -5,50 +5,40 @@
   transform: translate(-50%, -50%);
 }
 
+.span {
+  width: 48rem;
+  height: 48rem;
+  background-color: transparent;
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  font-size: 100rem;
+  border: 25px solid tomato;
+}
+
+.span span {
+  position: absolute;
+  top: -52.5rem;
+  left: -6.5rem;
+  font-size: 100rem;
+  z-index: -1;
+}
+
+.span span:nth-child(1) {
+  transform: rotate(45deg);
+  color: rebeccapurple;
+}
+
 .planet-orbit {
   position: absolute;
-  width: 55%;
+  width: 40%;
   height: 15%;
-  top: 50%;
-  left: 450px;
+  top: 41.4%;
+  left: 575px;
   animation: rotateOrbit 30s linear infinite;
   transform-origin: center center;
-  /* background-color: teal; */
-}
-
-.planet:nth-child(2) {
-  top: 18rem;
-  left: 7.5rem;
-}
-
-.planet:nth-child(3) {
-  top: -18rem;
-  left: 7.5rem;
-}
-
-.planet:nth-child(4) {
-  top: 18rem;
-  left: 45rem;
-}
-
-.planet:nth-child(5) {
-  top: 0;
-  left: 53.125rem;
-}
-
-.planet:nth-child(6) {
-  top: 22.063rem;
-  left: 26.25rem;
-}
-
-.planet:nth-child(7) {
-  top: -22.063rem;
-  left: 26.25rem;
-}
-
-.planet:nth-child(8) {
-  top: -18rem;
-  left: 45rem;
+  background-color: teal;
 }
 
 .planet {
@@ -60,8 +50,50 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   animation: rotation 30s linear infinite;
 }
+
+.planet:nth-child(1) {
+  top: 0rem;
+  left: -2rem;
+}
+
+.planet:nth-child(2) {
+  top: 15rem;
+  left: 4.2rem;
+}
+
+.planet:nth-child(3) {
+  top: 21rem;
+  left: 19.2rem;
+}
+
+.planet:nth-child(4) {
+  top: 14.8rem;
+  left: 34.8rem;
+}
+
+.planet:nth-child(5) {
+  top: 0rem;
+  left: 40rem;
+}
+
+.planet:nth-child(6) {
+  top: -15rem;
+  left: 34.8rem;
+}
+
+.planet:nth-child(7) {
+  top: -21rem;
+  left: 19.2rem;
+}
+
+.planet:nth-child(8) {
+  top: -15rem;
+  left: 4.2rem;
+}
+
 
 
 @keyframes rotateOrbit {

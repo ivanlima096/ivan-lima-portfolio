@@ -74,6 +74,11 @@ export default function Skills() {
           ))}
         </div>
         <img src={tech} alt="tech" className="centered-image md:w-[18rem] sm:w-[12rem] w-[8rem]" />
+        <div className='span'>
+          <span>+</span>
+          <span>+</span>
+        </div>
+
       </div>
     </section>
   );
