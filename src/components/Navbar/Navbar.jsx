@@ -16,7 +16,7 @@ export default function Navbar() {
     const section = document.getElementById(sectionId);
     if (section) {
       let offset =
-        (sectionId === "skills") ? 325 : 80
+        (sectionId === "skills") ? 185 : 80
       const sectionTop = section.offsetTop - offset;
 
       window.scrollTo({

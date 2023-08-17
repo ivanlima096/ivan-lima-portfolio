@@ -56,10 +56,10 @@ export default function Skills() {
     },
   ]);
   return (
-    <section id="skills" className='flex flex-col w-[100vw] overflow-hidden'>
-
+    <section id="skills" className='flex flex-col w-[100vw] h-[115vh] overflow-hidden bg-black'>
+      <div className='my-10'></div>
       <div className="h-[93vh] flex items-center justify-center relative">
-        <div className="planet-orbit">
+        <div className="planet-orbit ">
           {skills.map((skill, index) => (
             <div
               key={index}
@@ -73,7 +73,6 @@ export default function Skills() {
           ))}
         </div>
         <img src={tech} alt="tech" className="centered-image md:w-[18rem] sm:w-[12rem] w-[8rem]" />
-
       </div>
     </section>
   );
