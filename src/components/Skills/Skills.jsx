@@ -56,8 +56,7 @@ export default function Skills() {
     },
   ]);
   return (
-    <section id="skills" className='flex flex-col'>
-      <h1 className='mx-auto font-bold text-5xl'>SKILLS</h1>
+    <section id="skills" className='flex flex-col w-[100vw] overflow-hidden'>
 
       <div className="h-[93vh] flex items-center justify-center relative">
         <div className="planet-orbit">

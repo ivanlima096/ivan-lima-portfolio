@@ -1,6 +1,7 @@
 import About from "./components/About/About"
-import Navbar from "./components/Navbar/NAvbar"
-import Projects from "./components/Projects.css/Projects"
+import Navbar from "./components/Navbar/Navbar"
+import Projects from "./components/Projects/Projects"
+import SkillBar from "./components/SkillBar/SkillBar"
 import Skills from "./components/Skills/Skills"
 
 
@@ -10,6 +11,7 @@ function App() {
     <>
       <Navbar />
       <About />
+      <SkillBar />
       <Skills />
       <Projects />
     </>
