@@ -16,7 +16,7 @@ export default function Navbar() {
     const section = document.getElementById(sectionId);
     if (section) {
       let offset =
-        (sectionId === "skills") ? 345 : 80
+        (sectionId === "skills") ? 325 : 80
       const sectionTop = section.offsetTop - offset;
 
       window.scrollTo({
@@ -27,7 +27,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-[#000] w-[100vw]  h-[5rem] flex justify-between items-center sticky top-0 shadow-lg">
+    <nav className="bg-[#000] w-[100vw]  h-[5rem] flex justify-between items-center fixed top-0 shadow-lg">
       <img src={logo} alt="logo" className="w-[10rem] mx-12 select-none" />
       <ul className="gap-5 text-lg font-bold mx-12 hidden md:flex">
         <li><a href="#sobre" className="text-white uppercase font-bold" onClick={(e) => scrollToSection(e, "sobre")}>Sobre</a></li>
