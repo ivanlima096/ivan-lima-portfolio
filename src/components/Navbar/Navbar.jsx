@@ -14,7 +14,7 @@ export default function Navbar() {
     <nav className="bg-[#000] w-[100%] lg:max-w[99.1vw] h-[5rem] flex justify-between items-center sticky top-0 shadow-lg">
       <img src={logo} alt="logo" className="w-[10rem] mx-12 select-none" />
       <ul className="gap-5 text-lg font-bold mx-12 hidden md:flex">
-        <li><a href="#inicio" className="text-white uppercase font-bold">Início</a></li>
+        <li><a href="#sobre" className="text-white uppercase font-bold">Sobre</a></li>
         <li><a href="#skills" className="text-white  uppercase font-bold">skills</a></li>
         <li><a href="#projetos" className="text-white  uppercase font-bold">Projetos</a></li>
         <li><a href="#contato" className="text-white  uppercase font-bold">contato</a></li>
