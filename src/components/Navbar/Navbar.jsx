@@ -36,8 +36,8 @@ export default function Navbar() {
         <li><a href="#contato" className="text-white  uppercase font-bold" onClick={(e) => scrollToSection(e, "contato")}>contato</a></li>
       </ul>
       <div onClick={handleNav} className="block md:hidden">
-        {!nav ? <AiOutlineClose size={33} className="text-white p-1 border-2 rounded border-white hover:cursor-pointer" />
-          : <AiOutlineMenu size={33} className="text-white p-1 border-2 rounded border-white hover:cursor-pointer" />}
+        {!nav ? <AiOutlineClose size={33} className="text-white p-1 border-2 rounded mr-10 border-white hover:cursor-pointer" />
+          : <AiOutlineMenu size={33} className="text-white p-1 border-2 rounded mr-10 border-white hover:cursor-pointer" />}
       </div>
       <div className={!nav
         ? "fixed left-0 top-0 w-[50%] h-full border-r border-r-gray-900 bg-[#000300] ease duration-500"

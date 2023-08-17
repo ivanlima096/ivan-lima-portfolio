@@ -4,18 +4,18 @@ import Button from "../Button/Button"
 export default function About() {
   return (
     <section id="sobre" className="grid grid-cols-1 xl:grid-cols-2 h-[100vh] w-[100vw]">
-      <div className="leftSide w-100% h-[95%] lg:h-[78%] bg-black rounded-lg my-5 mx-12 text-white font-bold text-5xl md:text-7xl lg:text-[7rem]">
+      <div className="leftSide w-100% h-[95%] lg:h-[98%] xl:h-[82%] bg-black rounded-lg my-5 mx-12 text-white font-bold text-5xl md:text-7xl lg:text-[7rem]">
         <div className="mx-2 md:mx-44 lg:mx-2 flex justify-end px-16 pt-10">
           <h1>IVAN</h1>
         </div>
         <div className="flex mx-2 md:mx-44 lg:mx-2 justify-start p-8">
           <h1>LIMA.</h1>
         </div>
-        <div className="text-4xl md:text-7xl  lg:text-8xl xl:text-[7rem] bg-emerald-500 w-100%">
+        <div className="text-4xl md:text-7xl  lg:text-8xl xl:text-[5rem] 2xl:text-[7rem]  w-100%">
 
-          <h1 className="  w-100% flex justify-start italic ">/////FRONTEND</h1>
+          <h1 className="ml-5  w-100% flex justify-start italic ">/////FRONTEND</h1>
           <h1 className="w-100% flex justify-center italic text-black bg-white">///////////</h1>
-          <h1 className="mt-2 w-100% flex justify-end items-center italic">PORTFOLIO/////</h1>
+          <h1 className="mt-2 mr-5 w-100% flex justify-end items-center italic">PORTFOLIO/////</h1>
         </div>
 
       </div>
