@@ -1,5 +1,6 @@
 import { BsLinkedin, BsGithub, BsWhatsapp, BsDownload } from "react-icons/bs"
 import Button from "../Button/Button"
+import styles from "./About.css"
 
 export default function About() {
   return (
@@ -12,7 +13,6 @@ export default function About() {
           <h1>LIMA.</h1>
         </div>
         <div className="text-2xl min-[374px]:text-3xl min-[425px]:text-4xl md:text-7xl  lg:text-8xl xl:text-[5rem] 2xl:text-[7rem]  w-100%">
-
           <h1 className="ml-5  w-100% flex justify-start italic ">/////FRONTEND</h1>
           <h1 className="w-100% flex justify-center italic text-black bg-white">///////////</h1>
           <h1 className="mt-2 mr-5 w-100% flex justify-end items-center italic">PORTFOLIO/////</h1>
@@ -34,7 +34,7 @@ export default function About() {
           <a className="hover:scale-150 ease duration-300" href="https://www.linkedin.com/in/ivan-lima-dev/" target="_blank">< BsLinkedin /></a >
           <a className="hover:scale-150 ease duration-300" href="https://github.com/ivanlima096" target="_blank">< BsGithub /></a >
           <a className="hover:scale-150 ease duration-300" href="https://wa.me/5513988013623" target="_blank"> <BsWhatsapp /></a>
-          <Button text={`Ver CV`} color="black" textColor="white" hoverColor="white" hoverTextColor="black" icon={<BsDownload />} />
+          <Button text={`Ver CV`} color="red" textColor="red" icon={<BsDownload />} />
 
         </div>
       </div>

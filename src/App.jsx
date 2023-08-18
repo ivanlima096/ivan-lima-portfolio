@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Projects from "./components/Projects/Projects"
 import SkillBar from "./components/SkillBar/SkillBar"
 import Skills from "./components/Skills/Skills"
+import WaveAnimation from "./components/WaveAnimation/WaveAnimation"
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <About />
       <SkillBar />
       <Skills />
+      <WaveAnimation/>
       <Projects />
     </>
   )

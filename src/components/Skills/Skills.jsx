@@ -67,15 +67,16 @@ export default function Skills() {
           backgroundPosition: 'center',
           position: 'absolute',
           top: 0,
-          left: 0,
-          width: '100%',
+          left: -5,
+          width: '105%',
           height: '100%',
           zIndex: -1,
           filter: 'blur(2px)',
+          overflowX: "hidden"
         }}
       ></div>
-      <div className="h-[100vh] flex items-center justify-center relative mt-10">
-        <div className="planet-orbit ">
+      <div className="h-[100vh] w-[95vw] flex items-center justify-center relative mt-10">
+        <div className="planet-orbit hidden md:block">
           {skills.map((skill, index) => (
             <div
               key={index}
@@ -87,7 +88,21 @@ export default function Skills() {
             </div>
           ))}
         </div>
-        <img src={earth} alt="tech" className="centered-image md:w-[18rem] sm:w-[12rem] w-[8rem]" />
+        <div className="w-[95vw] md:hidden ">
+          <div className='flex flex-wrap justify-center gap-4'>
+            {skills.map((skill, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center justify-center w-[8rem] h-[8rem] min-[375px]:w-[10rem] min-[375px]:h-[10rem] rounded-[50%] p-2 shadow-2xl"
+                style={{ backgroundColor: `#F9F9F9`, color: `#232323` }}
+              >
+                <span className='font-bold'>{skill.name}</span>
+                <skill.icon size={80} />
+              </div>
+            ))}
+          </div>
+        </div>
+        <img src={earth} alt="tech" className="centered-image md:w-[18rem] sm:w-[12rem] w-[8rem] hidden md:block" />
       </div>
     </section>
   );
