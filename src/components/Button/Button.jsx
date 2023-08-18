@@ -1,4 +1,4 @@
-export default function Button({ text, icon }) {
+export default function Button({ text, icon,url }) {
   return (
     <a
       className={
@@ -6,7 +6,7 @@ export default function Button({ text, icon }) {
         flex items-center justify-between gap-5 rounded-md border-2 border-black
          ease duration-300 hover:scale-110 bg-black text-white hover:bg-white hover:text-black`
       }
-      href="https://drive.google.com/file/d/144wE80aeZA2JarVSf2I2uyynP__nuTFr/view?usp=sharings"
+      href={url}
       target="_blank"
       rel="noopener noreferrer"
     >
