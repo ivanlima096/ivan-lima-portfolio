@@ -34,7 +34,7 @@ export default function About() {
           <a className="hover:scale-150 ease duration-300" href="https://www.linkedin.com/in/ivan-lima-dev/" target="_blank">< BsLinkedin /></a >
           <a className="hover:scale-150 ease duration-300" href="https://github.com/ivanlima096" target="_blank">< BsGithub /></a >
           <a className="hover:scale-150 ease duration-300" href="https://wa.me/5513988013623" target="_blank"> <BsWhatsapp /></a>
-          <Button text={`Ver CV`} color="black" textColor="white" icon={<BsDownload />} />
+          <Button text={`Ver CV`} color="black" textColor="white" hoverColor="white" hoverTextColor="black" icon={<BsDownload />} />
 
         </div>
       </div>

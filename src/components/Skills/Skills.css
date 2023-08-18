@@ -3,6 +3,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  filter: drop-shadow(0px 0px 10px #121212);
+  filter: grayscale(0.4);
+}
+
+.background-skill {
+  backdrop-filter: blur(20px);
+}
+
+.centered-image:hover,
+.planet:hover {
+  filter: grayscale(0);
 }
 
 .planet-orbit {
@@ -15,7 +26,9 @@
   transform-origin: center center;
 }
 
+
 .planet {
+  filter: grayscale(0.8);
   position: absolute;
   width: 9rem;
   height: 9rem;
