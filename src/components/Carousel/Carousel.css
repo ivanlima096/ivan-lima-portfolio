@@ -1,5 +1,5 @@
 .carousel button {
-  background-color: #ccc;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .carousel span {
@@ -7,9 +7,6 @@
   border: 2px solid black;
 }
 
-.carousel span::selection {
-  transform: scale(1.5);
-  background-color: #121212;
-  border: 5px solid blue;
-  color: red;
+.carousel span:hover {
+  background-color: #CCC;
 }
