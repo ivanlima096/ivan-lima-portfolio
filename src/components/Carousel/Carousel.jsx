@@ -4,8 +4,10 @@ import projects1 from "../../assets/projects-1.png";
 import projects3 from "../../assets/projects-3.png";
 import Button from "../Button/Button";
 import { BsEyeFill, BsArrowUpRightCircleFill } from "react-icons/bs";
-
 import styles from "./Carousel.css"
+import { useState } from "react";
+import Modal from "../Modal/Modal";
+
 export const projects = [
   {
     name: "Tailwind Site",
@@ -13,13 +15,26 @@ export const projects = [
     demoURL: "https://google.com"
   },
   {
-    name: "Outro Site",
+    name: "Segundo Site",
     url: teste,
     demoURL: "https://youtube.com"
+  },
+  {
+    name: "Terceiro Site",
+    url: projects3,
+    demoURL: "https://facebook.com"
   },
 ];
 
 export default function CarouselCustomNavigation() {
+  const [projectModals, setProjectModals] = useState(Array(projects.length).fill(false));
+
+  const handleModal = (projectIndex) => {
+    const newProjectModals = [...projectModals];
+    newProjectModals[projectIndex] = true;
+    setProjectModals(newProjectModals);
+  }
+
   return (
     <section className="carousel">
       <Carousel
@@ -41,7 +56,12 @@ export default function CarouselCustomNavigation() {
               key={Math.floor(Math.random() * 500000)}
               className='border-t-2 border-black bg-white flex flex-col items-center pt-8 pb-2 gap-16 font-bold text-lg justify-center md:flex-row md:justify-around md:gap-0'>
               <Button text={`Ver Site`} icon={<BsArrowUpRightCircleFill />} url={project.demoURL} />
-              <Button text={`Ver Prévia`} icon={<BsEyeFill />} url={project.url} />
+              <Button text={`Ver Prévia`} icon={<BsEyeFill />} handleFunction={() => handleModal(index)} />
+              <Modal isOpen={projectModals[index]} setIsOpenModal={() => {
+                const newProjectModals = [...projectModals];
+                newProjectModals[index] = false;
+                setProjectModals(newProjectModals);
+              }} projectName={project.name} projectUrl={project.url} />
             </div>
           </>
         ))}

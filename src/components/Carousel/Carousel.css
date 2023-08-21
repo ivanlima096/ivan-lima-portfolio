@@ -7,7 +7,9 @@
   border: 2px solid black;
 }
 
-span::selection {
+.carousel span::selection {
   transform: scale(1.5);
   background-color: #121212;
+  border: 5px solid blue;
+  color: red;
 }
