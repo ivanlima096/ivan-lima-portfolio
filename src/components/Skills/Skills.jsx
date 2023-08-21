@@ -69,7 +69,7 @@ export default function Skills() {
             <div
               key={index}
               className="planet flex flex-col "
-              style={{ backgroundColor: `${skill.backgroundColor}`, color: `${skill.color}`, userSelect:"none" }}
+              style={{ backgroundColor: `${skill.backgroundColor}`, color: `${skill.color}`, userSelect: "none" }}
             >
               <span className='font-bold'>{skill.name}</span>
               <skill.icon size={120} />

@@ -6,11 +6,12 @@
   filter: drop-shadow(0px 0px 10px #121212);
   filter: grayscale(0.4);
 }
+
 .skills-container {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 100vh; /* Ajuste conforme necessário */
+  height: 100vh;
 }
 
 .background-skill {
@@ -23,11 +24,12 @@
 }
 
 .planet-orbit {
+  /* background-color: aqua; */
   position: absolute;
-  width: 40%;
+  width: 800px;
   height: 15%;
-  top: 41.4%;
-  left: 575px;
+  top: 42%;
+  left: 525px;
   animation: rotateOrbit 30s linear infinite;
   transform-origin: center center;
 }

@@ -1,0 +1,13 @@
+.carousel button {
+  background-color: #ccc;
+}
+
+.carousel span {
+  background-color: #FFF;
+  border: 2px solid black;
+}
+
+span::selection {
+  transform: scale(1.5);
+  background-color: #121212;
+}

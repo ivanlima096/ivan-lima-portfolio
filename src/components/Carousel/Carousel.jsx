@@ -1,62 +1,52 @@
 import { Carousel } from "@material-tailwind/react";
-import logo from "../../assets/logo.png"
-import projects1 from "../../assets/projects-1.png"
+import teste from "../../assets/teste.png";
+import projects1 from "../../assets/projects-1.png";
+import projects3 from "../../assets/projects-3.png";
+import Button from "../Button/Button";
+import { BsEyeFill, BsArrowUpRightCircleFill } from "react-icons/bs";
 
- 
+import styles from "./Carousel.css"
 export const projects = [
   {
     name: "Tailwind Site",
     url: projects1,
     demoURL: "https://google.com"
-  }
-]
+  },
+  {
+    name: "Outro Site",
+    url: teste,
+    demoURL: "https://youtube.com"
+  },
+];
 
 export default function CarouselCustomNavigation() {
   return (
-    <Carousel
-    transition={{duration: 1}}
-      className="rounded-xl"
-      navigation={({ setActiveIndex, activeIndex, length }) => (
-        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
-          {new Array(length).fill("").map((_, i) => (
-            <span
-              key={i}
-              className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                activeIndex === i ? "w-6 h-2 bg-white" : "w-4 h-2 bg-black border-[1px] border-white"
-              }`}
-              onClick={() => setActiveIndex(i)}
-            />
-          ))}
-        </div>
-      )}
-    >
-      {projects.map((project, index) => (
-        <>
-          <img 
-          key={index}
-          src={project.url}
-          alt={project.name}
-          className="h-full w-full object-cover"
-          />
-
+    <section className="carousel">
+      <Carousel
+        transition={{ duration: 1 }}
+        className="rounded-xl mb-10 bg-[#FFF] border-2 border-black  md:w-[100%]"
+      >
+        {projects.map((project, index) => (
+          <>
+            <div
+              key={index}
+              className="h-[45vh] max-w-[100%]  aspect-video md:h-[65vh] md:aspect-auto flex flex-col md:flex-row gap-5 font-bold text-lg overflow-hidden">
+              <img
+                src={project.url}
+                alt={project.name}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div
+              key={Math.floor(Math.random() * 500000)}
+              className='border-t-2 border-black bg-white flex flex-col items-center pt-8 pb-2 gap-16 font-bold text-lg justify-center md:flex-row md:justify-around md:gap-0'>
+              <Button text={`Ver Site`} icon={<BsArrowUpRightCircleFill />} url={project.demoURL} />
+              <Button text={`Ver Prévia`} icon={<BsEyeFill />} url={project.url} />
+            </div>
           </>
-        )
-      )}
-      <img
-        src={projects1}
-        alt="image 1"
-        className="h-full w-full object-cover"
-        />
-      <img
-        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-        alt="image 2"
-        className="h-full w-full  object-cover"
-      />
-      <img
-        src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-        alt="image 3"
-        className="h-full w-full  object-cover"
-      />
-    </Carousel>
+        ))}
+      </Carousel>
+
+    </section>
   );
 }
