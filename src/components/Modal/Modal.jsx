@@ -33,7 +33,7 @@ export default function Modal({
             loop
             src={projectVideo}
             alt={projectName}
-            className='absolute top-0 left-0 w-full h-full object-cover z-0 rounded-3xl'
+            className='absolute top-0 left-0 w-full h-full object-fill md:object-cover z-0 rounded-3xl'
           />
           <div className='absolute top-0 left-0 w-full h-full z-1 flex flex-col items-center justify-end'>
             <div className='bg-[#000000b3] rounded-xl p-5 shadow-md'>
