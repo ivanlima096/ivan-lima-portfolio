@@ -74,13 +74,13 @@ export default function Skills() {
             </div>
           ))}
         </div>
-        <div className="w-[95vw] md:hidden ">
+        <div className="w-[99vw] md:hidden ">
           <div className='flex flex-wrap justify-center gap-4'>
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center w-[8rem] h-[8rem] min-[375px]:w-[10rem] min-[375px]:h-[10rem] rounded-[50%] p-2 shadow-2xl"
-                style={{ backgroundColor: `#F9F9F9`, color: `#232323` }}
+                className="small-planet flex flex-col items-center justify-center w-[8rem] h-[8rem] min-[375px]:w-[10rem] min-[375px]:h-[10rem] rounded-[50%] p-2 shadow-2xl"
+                style={{ backgroundColor: `${skill.backgroundColor}`, color: `${skill.color}`, userSelect: "none" }}
               >
                 <span className='font-bold'>{skill.name}</span>
                 <skill.icon size={80} />
