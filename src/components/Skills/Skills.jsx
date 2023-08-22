@@ -1,13 +1,11 @@
 import earth from '../../assets/earth.png';
-import space from '../../assets/space.jpg';
 import { BiLogoHtml5, BiLogoCss3, BiLogoJavascript, BiLogoMongodb, BiLogoTailwindCss, BiLogoNodejs, BiLogoGit, BiLogoReact } from 'react-icons/bi';
 import styles from './Skills.css';
-import { useState } from 'react';
 import Particle from '../Particles/Particles';
 
 
 export default function Skills() {
-  const [skills, setSkills] = useState([
+  const skills = [
     {
       name: "HTML",
       icon: BiLogoHtml5,
@@ -57,7 +55,7 @@ export default function Skills() {
       backgroundColor: "#FFF",
       color: "#1572B6"
     },
-  ]);
+  ];
   return (
     <section id="skills" className='flex flex-col w-[100vw] h-[115vh] overflow-hidden relative bg-black -z-5'>
       <div>
