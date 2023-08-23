@@ -30,7 +30,7 @@ export default function About() {
           </p>
         </div>
 
-        <div className="flex items-center justify-center gap-10 mt-10 xl:mt-32 text-lg md:text-3xl sm:text-2xl">
+        <div className="flex items-center justify-center gap-10 mt-10 xl:mt-32 text-lg  md:text-3xl sm:text-2xl">
           <a className="hover:scale-150 ease duration-300" href="https://www.linkedin.com/in/ivan-lima-dev/" target="_blank">< BsLinkedin /></a >
           <a className="hover:scale-150 ease duration-300" href="https://github.com/ivanlima096" target="_blank">< BsGithub /></a >
           <a className="hover:scale-150 ease duration-300" href="https://wa.me/5513988013623" target="_blank"> <BsWhatsapp /></a>

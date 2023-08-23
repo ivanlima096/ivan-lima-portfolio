@@ -21,10 +21,10 @@ export default function Modal({
   if (isOpen) {
     return (
       <div
-        className=' py-2 md:p-[10rem] fixed top-0 left-0 bottom-0 right-0 bg-[#000000b3] z-50 flex items-center justify-center'
+        className=' py-2 md:p-[10rem] fixed top-0 left-0 bottom-0 right-0 bg-[#000000d9] md:bg-[#000000b3] z-50 flex items-center justify-center'
         onClick={setIsOpenModal}>
         <div
-          className='relative rounded-3xl p-5 h-[70vh] w-[90vw] md:h-[78vh] md:w-[90vw] lg:h-[95vh] lg:w-[95vw] max-w-[95vw] aspect-video'
+          className='relative rounded-3xl p-5 h-[70vh] w-[100%] md:h-[78vh] md:w-[90vw] lg:h-[95vh] lg:w-[95vw] max-w-[95vw] aspect-video'
           onClick={handleContentClick}
         >
           <video
@@ -33,10 +33,10 @@ export default function Modal({
             loop
             src={projectVideo}
             alt={projectName}
-            className='absolute top-0 left-0 w-full h-full object-fill md:object-cover z-0 rounded-3xl'
+            className='absolute top-0 left-0 w-full aspect-video object-fill md:object-cover z-0 rounded-3xl'
           />
-          <div className='absolute top-0 left-0 w-full h-full z-1 flex flex-col items-center justify-end'>
-            <div className='bg-[#000000b3] rounded-xl p-5 shadow-md'>
+          <div className='absolute top-0 left-0 w-[full] h-full z-1 flex flex-col items-center justify-end'>
+            <div className='bg-[#000000b3] w-[92vw] rounded-xl p-5 shadow-md'>
               <div className='flex justify-between'>
                 <h1 className='text-2xl md:text-4xl uppercase font-bold py-2'>{projectName}</h1>
                 <button className='text-xl md:text-3xl' onClick={setIsOpenModal}>

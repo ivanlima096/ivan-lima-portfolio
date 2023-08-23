@@ -79,7 +79,7 @@ const Particle = () => {
 
   return (
     <div className="App">
-      <Particles options={options} init={particlesInit} className="h-[10vh]"/>
+      <Particles options={options} init={particlesInit} className="h-[10vh]" />
     </div>
   );
 };

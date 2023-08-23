@@ -57,22 +57,26 @@ export default function Skills() {
     },
   ];
   return (
-    <section id="skills" className='flex flex-col w-[100vw] h-[115vh] overflow-hidden relative bg-black -z-5'>
+    <section id="skills" className='flex flex-col w-[100vw] h-[105vh] overflow-hidden relative bg-black -z-5'>
       <div>
         <Particle />
       </div>
-      <div className="h-[100vh] w-[95vw] flex items-center justify-center relative mt-10">
-        <div className="planet-orbit hidden md:block">
-          {skills.map((skill, index) => (
-            <div
-              key={index}
-              className="planet flex flex-col "
-              style={{ backgroundColor: `${skill.backgroundColor}`, color: `${skill.color}`, userSelect: "none" }}
-            >
-              <span className='font-bold'>{skill.name}</span>
-              <skill.icon size={120} />
+      <div className="h-[100vh] w-[100vw] flex items-center justify-center">
+        <div className="hidden relative md:block">
+          <div id="middle-orbit">
+            <div id="middle-orbit-cirlces">
+              {skills.map((skill, index) => (
+                <div
+                  key={index}
+                  className="middle-orbit-cirlces flex flex-col items-center justify-center rounded-[50%] absolute w-[9rem] h-[9rem] grayscale-[0.8] hover:grayscale-0 p-[10px] shadow-2xl"
+                  style={{ backgroundColor: `${skill.backgroundColor}`, color: `${skill.color}`, userSelect: "none" }}
+                >
+                  <span className='font-bold'>{skill.name}</span>
+                  <skill.icon size={120} />
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
         <div className="w-[99vw] md:hidden ">
           <div className='flex flex-wrap justify-center gap-4'>
