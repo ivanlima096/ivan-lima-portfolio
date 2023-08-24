@@ -58,7 +58,7 @@ export default function ContactForm() {
           <div className='w-[100%] text-center my-2'>
             <button
               type="submit"
-              className="bg-black text-white px-5 py-3 rounded-md text-center hover:scale-105 ease duration-300 "
+              className="bg-black border-2 border-black text-white px-5 py-3 rounded-md text-center hover:scale-105 hover:bg-transparent hover:text-black ease duration-300 "
             >
               Enviar
             </button>
