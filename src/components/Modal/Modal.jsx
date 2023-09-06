@@ -36,7 +36,7 @@ export default function Modal({
             className='absolute top-0 left-0 w-full aspect-video object-fill md:object-cover z-0 rounded-3xl'
           />
           <div className='absolute top-0 left-0 w-[full] h-full z-1 flex flex-col items-center justify-end'>
-            <div className='bg-[#000000b3] w-[92vw] rounded-xl p-5 shadow-md'>
+            <div className='bg-[#000000b3] w-[92vw] sm:w-[100%] rounded-xl p-5 shadow-md'>
               <div className='flex justify-between'>
                 <h1 className='text-2xl md:text-4xl uppercase font-bold py-2'>{projectName}</h1>
                 <button className='text-xl md:text-3xl' onClick={setIsOpenModal}>

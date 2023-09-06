@@ -10,6 +10,8 @@ import projects4 from "../../assets/Project 4/projects-4.png";
 import projects4video from "../../assets/Project 4/project4video.mp4";
 import projects5 from "../../assets/Project 5/projects-5.png";
 import projects5video from "../../assets/Project 5/project5video.mp4";
+import projects6 from "../../assets/Project 6/project-6.png";
+import projects6video from "../../assets/Project 6/project-6-video.mp4";
 import Button from "../Button/Button";
 import { BsEyeFill, BsArrowUpRightCircleFill } from "react-icons/bs";
 import styles from "./Carousel.css";
@@ -17,6 +19,15 @@ import { useState } from "react";
 import Modal from "../Modal/Modal";
 
 export const projects = [
+  {
+    name: "Site de Treino",
+    photo: projects6,
+    site: "https://ilo-cali.netlify.app/",
+    demoURL: projects6video,
+    githubURL: "https://github.com/ivanlima096/ILO_CALI",
+    description: "Projeto React criado com o objetivo de praticar habilidades de desenvolvimento web com React, Context, Hooks e Tailwind, bem como utilizar no cotiadiano para facilitar meus treinos",
+    technologies: "Javascript, React, CSS, Tailwind"
+  },
   {
     name: "Tailwind Site",
     photo: projects1,
