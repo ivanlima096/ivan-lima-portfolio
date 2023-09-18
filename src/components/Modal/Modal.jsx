@@ -46,9 +46,9 @@ export default function Modal({
         >
           <div className='absolute top-0 left-0 w-[full] h-full z-1 flex flex-col items-center justify-end '>
             <div className='bg-[#000000b3] w-[92vw] sm:w-[100%] h-full rounded-xl p-5 shadow-md justify-between flex items-center flex-col'>
-              <div className='flex justify-between z-50 mt-5 w-full  '>
+              <div className='flex justify-between z-50 sm:mt-5 w-full  '>
                 <h1 className='text-2xl md:text-4xl uppercase font-bold py-2'>{projectName}</h1>
-                <button className='text-xl md:text-3xl' onClick={setIsOpenModal}>
+                <button className='text-2xl md:text-3xl' onClick={setIsOpenModal}>
                   <BiXCircle />
                 </button>
               </div>
@@ -58,12 +58,12 @@ export default function Modal({
                 loop
                 src={projectVideo}
                 alt={projectName}
-                className='absolute top-24 left-0 w-full max-h-[90%] aspect-video object-fill md:object-fill z-[-10] rounded-3xl'
+                className='absolute top-24 left-0 w-full max-h-[40%] aspect-square md:max-h-[90%] md:aspect-video object-fill md:object-fill z-[-10] rounded-3xl'
               />
               <button onClick={handlePlayButtonClick} className='text-7xl w-10 text-[#887979ce]'>
-                {isVideoPlaying ? <BsFillPauseCircleFill opacity={0.2} /> : <BsPlayCircleFill />}
+                {isVideoPlaying ? <BsFillPauseCircleFill opacity={0.1} /> : <BsPlayCircleFill />}
               </button>
-              <div className='text-[0.5rem] md:text-[0.8rem] lg:text-lg top-50'>
+              <div className='text-[0.8rem] md:text-[0.8rem] lg:text-lg top-0 md:top-50 w-full'>
                 <h4>Descrição</h4>
                 <p className='pb-2'>{projectDescription}</p>
                 <h4>Tecnologias Utilizadas</h4>

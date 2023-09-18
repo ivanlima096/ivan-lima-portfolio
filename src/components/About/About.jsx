@@ -12,10 +12,10 @@ export default function About() {
         <div className="flex mx-2 md:mx-44 lg:mx-2 justify-start p-8">
           <h1>LIMA.</h1>
         </div>
-        <div className="text-2xl min-[374px]:text-3xl min-[425px]:text-4xl md:text-6xl  lg:text-7xl xl:text-[4.2rem] 2xl:text-[4.8rem]  w-100%">
-          <h1 className="ml-3  w-100% flex justify-start italic ">/////FRONTEND</h1>
+        <div className="text-3xl sm:text-6xl md:text-7xl  lg:text-8xl xl:text-[4.2rem] 2xl:text-[5rem] w-100%">
+          <h1 className="ml-3  w-100% flex justify-start italic ">////FRONTEND</h1>
           <h1 className="w-100% flex justify-center italic text-black bg-white">///////////</h1>
-          <h1 className="mt-2 mr-3 w-100% flex justify-end items-center italic">PORTFOLIO/////</h1>
+          <h1 className="mt-2 mr-3 w-100% flex justify-end items-center italic">PORTFOLIO////</h1>
         </div>
 
       </div>
