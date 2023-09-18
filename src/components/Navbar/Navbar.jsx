@@ -44,7 +44,7 @@ export default function Navbar() {
         : "fixed left-[-330%]"}>
         <img src={logo} alt="logo" className="w-[10rem] mx-12 select-none" />
         <ul className="flex flex-col gap-6 text-lg font-bold mx-12 my-4 py-4">
-          <li><a href="#inicio" className="text-white uppercase font-bold">Início</a></li>
+          <li><a href="#sobre" className="text-white uppercase font-bold">Início</a></li>
           <li><a href="#skills" className="text-white  uppercase font-bold">skills</a></li>
           <li><a href="#projetos" className="text-white  uppercase font-bold">Projetos</a></li>
           <li><a href="#contato" className="text-white  uppercase font-bold">contato</a></li>

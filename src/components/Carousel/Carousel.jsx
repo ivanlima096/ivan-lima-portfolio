@@ -1,5 +1,4 @@
-import { Carousel } from "@material-tailwind/react";
-import teste from "../../assets/teste.png";
+import { Carousel, slider } from "@material-tailwind/react";
 import projects1 from "../../assets/Project 1/projects-1.png";
 import projects1video from "../../assets/Project 1/project1video.mp4";
 import projects2 from "../../assets/Project 2/projects-2.png";
@@ -17,6 +16,7 @@ import { BsEyeFill, BsArrowUpRightCircleFill } from "react-icons/bs";
 import styles from "./Carousel.css";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
+import sliderColor from "@material-tailwind/react/theme/components/slider/sliderColor";
 
 export const projects = [
   {
@@ -88,6 +88,7 @@ export default function CarouselCustomNavigation() {
     <section className="carousel">
       <Carousel
         transition={{ duration: 1 }}
+        slideRef={sliderColor}
         className="rounded-xl mb-10 w-[82vw] lg:w-[80vw] bg-[#FFF] border-2 border-black md:w-[100%] shadow-2xl"
       >
         {projects.map((project, index) => (

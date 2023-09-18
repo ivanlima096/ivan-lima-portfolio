@@ -14,3 +14,7 @@
 .carousel span:hover {
   background-color: #232323;
 }
+
+.carousel span:active {
+  background-color: red;
+}
