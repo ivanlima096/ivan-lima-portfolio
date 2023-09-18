@@ -1,3 +1,16 @@
+.particles::before {
+  content: "";
+  background-image: url('../../assets/particles.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  position: absolute;
+  opacity: .25;
+  inset: 0;
+  z-index: 0;
+}
+
 #middle-orbit {
   position: absolute;
   top: -22.7rem;

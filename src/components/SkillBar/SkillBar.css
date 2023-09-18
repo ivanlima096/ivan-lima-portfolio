@@ -1,12 +1,11 @@
 .scrolling-text {
   display: inline-block;
-  animation: scroll 30s linear infinite;
+  animation: scroll 40s linear infinite;
   white-space: nowrap;
 }
 
 .scrolling-text span {
   padding-right: 50px;
-
 }
 
 @keyframes scroll {
@@ -15,6 +14,6 @@
   }
 
   100% {
-    transform: translateX(calc(-20% + 50px));
+    transform: translateX(calc(50% - 60px));
   }
 }

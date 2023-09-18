@@ -1,7 +1,7 @@
 import earth from '../../assets/earth.png';
 import { BiLogoHtml5, BiLogoCss3, BiLogoJavascript, BiLogoMongodb, BiLogoTailwindCss, BiLogoNodejs, BiLogoGit, BiLogoReact } from 'react-icons/bi';
 import styles from './Skills.css';
-import Particle from '../Particles/Particles';
+// import Particle from '../Particles/Particles';
 
 
 export default function Skills() {
@@ -57,11 +57,11 @@ export default function Skills() {
     },
   ];
   return (
-    <section id="skills" className='flex flex-col w-[100vw] h-[105vh] overflow-hidden relative bg-black -z-5'>
-      <div>
-        <Particle />
+    <section id="skills" className='particles flex flex-col w-[100vw] h-[105vh] overflow-hidden relative bg-black -z-5'>
+      <div className='particles'>
+
       </div>
-      <div className="h-[100vh] w-[100vw] flex items-center justify-center">
+      <div className="h-[100vh] w-[100vw] flex items-center justify-center sm:mt-20 ">
         <div className="hidden relative md:block">
           <div id="middle-orbit">
             <div id="middle-orbit-cirlces">
@@ -92,7 +92,7 @@ export default function Skills() {
             ))}
           </div>
         </div>
-        <img src={earth} alt="tech" className="centered-image md:w-[18rem] sm:w-[12rem] w-[8rem] hidden md:block select-none" />
+        {/* <img src={earth} alt="tech" className="centered-image md:w-[18rem] sm:w-[12rem] w-[8rem] hidden md:block select-none" /> */}
       </div>
     </section>
   );
